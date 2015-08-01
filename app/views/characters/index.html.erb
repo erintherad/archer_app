@@ -1,0 +1,12 @@
+<% @characters.each do |character| %>
+
+    <div>
+    	<%= image_tag character.photo.url(:small) %>
+        <h2><%= character.name %></h2><br>
+        <p>Description: <%=  character.description %></p>
+        <%= button_to "Delete", character, method: :delete %><br>
+        <%= link_to "Edit", edit_character_path(character), class: "btn btn-default" %>
+    </div>
+    <hr>
+
+<% end %>
