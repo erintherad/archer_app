@@ -10,5 +10,5 @@ This a standard rails app, use the ActiveRecord rake tasks.
 
 Deployment Instructions:  git push heroku master
 
-![Alt text](http://full/path/to/homepage.jpg "Archer Wiki")
+![Archer Wiki](/homepage.jpg)
 
