@@ -1,6 +1,6 @@
 class Character < ActiveRecord::Base
 
-	has_attached_file :photo, :styles => { :small => "150x150>" },
+	has_attached_file :photo, :styles => { :small => "200x200>" },
 					  :url => "/photos/characters/:id/:style/:basename.:extension",
 					  :path => ":rails_root/public/photos/characters/:id/:style/:basename.:extension"
 

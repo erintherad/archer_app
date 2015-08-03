@@ -1,0 +1,30 @@
+@font-face {
+    font-family: brand;
+    src: url(/fonts/brand.ttf);
+}
+@font-face {
+	font-family: body;
+    src: url(/fonts/body.ttf);
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	font-family: body;
+}
+
+#background_img {
+	width: 100%;
+	height: 100%;
+	background-image: url("http://i.imgur.com/x87a2OS.png");
+	opacity: 0.2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+}
+
+.navbar-brand {
+	font-family: brand;
+}
+

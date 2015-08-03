@@ -1,12 +1,16 @@
 <% @characters.each do |character| %>
 
-    <div>
-    	<%= image_tag character.photo.url(:small) %>
-        <h2><%= character.name %></h2><br>
-        <p>Description: <%=  character.description %></p>
-        <%= button_to "Delete", character, method: :delete %><br>
-        <%= link_to "Edit", edit_character_path(character), class: "btn btn-default" %>
-    </div>
-    <hr>
-
+    <div class="col-sm-12 post">
+	    <div class="img_post col-sm-4">
+	    	<%= image_tag character.photo.url(:small), class: "img-responsive center-block" %>
+	    </div>
+	    <div class="description_post col-sm-8">
+	    	<div class="title_post">
+		        <h2 class="character_name"><%= character.name %></h2>
+		        <%= link_to "Delete", character, method: :delete %>
+		        <%= link_to "Edit", edit_character_path(character), class: "title_link" %>
+	    	</div>
+	        <p class="character_description">Description: <%=  character.description %></p>
+	    </div>
+	</div>
 <% end %>
