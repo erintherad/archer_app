@@ -1,28 +1,14 @@
-== README
+## Archer Wiki
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app allows users to CRUD beloved Archer characters from the hit FX TV show, Archer.
 
-Things you may want to cover:
+It includes Ruby version 2.0.0p481.
 
-* Ruby version
+System dependencies include ImageMagick for Paperclip.
 
-* System dependencies
+This a standard rails app, use the ActiveRecord rake tasks.
 
-* Configuration
+Deployment Instructions:  git push heroku master
 
-* Database creation
+![Alt text](http://full/path/to/homepage.jpg "Archer Wiki")
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
