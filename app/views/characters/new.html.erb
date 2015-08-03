@@ -1,8 +1,9 @@
-<%= form_for @character, :html => { :multipart => true } do |f| %>
-
-   <p><%= f.text_field :name, class: 'form-control', autofocus: true, placeholder: 'Name' %></p>
-    <p><%= f.text_area :description, class: 'form-control', autofocus: true, placeholder: 'Description' %></p>
-    <p><%= f.file_field :photo %></p>
-    <p><%= f.submit "Save Character" %></p>
-
-<% end %>
+<div class="col-sm-6 new">
+	<h2 class="form_title">ADD A NEW CHARACTER</h2>
+	<%= form_for @character, :html => { :multipart => true } do |f| %>
+		<p><%= f.text_field :name, class: 'form-control', autofocus: true, placeholder: 'Name' %></p>
+		<p><%= f.text_area :description, class: 'form-control', autofocus: true, placeholder: 'Description' %></p>
+		<p><%= f.file_field :photo %></p>
+		<p><%= f.submit "Save Character" %></p>
+	<% end %>
+</div>
