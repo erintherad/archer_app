@@ -6,7 +6,7 @@
 	    </div>
 	    <div class="description_post col-sm-8">
 	    	<div class="title_post">
-		        <h2 class="character_name"><%= character.name %></h2>
+		        <a href="/characters/<%= character.id %>"><h2 class="character_name"><%= character.name %></h2></a>
 		        <%= link_to "Delete", character, method: :delete %>
 		        <%= link_to "Edit", edit_character_path(character), class: "title_link" %>
 	    	</div>
